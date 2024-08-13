@@ -32,7 +32,7 @@ export default function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome next-mono-test 👋
+              Welcome next-mono-test 👋 Hello
             </h1>
           </div>
 
