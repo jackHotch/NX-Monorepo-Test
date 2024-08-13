@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@monotest/final-lib": ["libs/final-lib/src/index.ts"],
+      "@monotest/my-lib": ["libs/my-lib/src/index.ts"],
+      "@monotest/my-lib/server": ["libs/my-lib/src/server.ts"],
+      "@monotest/next-lib": ["libs/next-lib/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

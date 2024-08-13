@@ -1,25 +1,6 @@
-'use client';
-
 import styles from './page.module.css';
-import { MyLib } from '@monotest/my-lib';
-import { FinalLib } from '@monotest/final-lib';
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-
-interface weight {
-  weight: string;
-  date: string;
-}
 
 export default function Index() {
-  const [weight, setWeight] = useState<any>('');
-
-  useEffect(() => {
-    axios.get('http://localhost:8080/api/splits/current').then((res) => {
-      setWeight(res.data);
-    });
-  });
-
   /*
    * Replace the elements below with your own.
    *
@@ -32,13 +13,9 @@ export default function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome next-mono-test 👋
+              Welcome my-next-app 👋
             </h1>
           </div>
-
-          <MyLib />
-          <FinalLib />
-          <p>{weight.name}</p>
 
           <div id="hero" className="rounded">
             <div className="text-container">
@@ -420,7 +397,7 @@ export default function Index() {
                 </svg>
                 View project details
               </summary>
-              <pre>nx show project next-mono-test --web</pre>
+              <pre>nx show project my-next-app --web</pre>
             </details>
             <details>
               <summary>
